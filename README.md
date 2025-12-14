@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JobSeeker Company FE Test
+
+This is a **Front End Technical Test** for the Frontend Developer position . The application is built using **Next.js**, **Tailwind CSS**, **Zustand**, **Axios**, and **Yup**.
+
+It demonstrates a simple User and Post management app with CRUD operations, responsive UI, and state management.
+
+---
+
+## Features
+
+### User Page
+- Fetch users from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)  
+- **CRUD actions**: Create, Read, Update, Delete  
+- Search and pagination support  
+- Display company name  
+- Responsive table and list view  
+
+### Post Page
+- Select a user to display posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users/{id}/posts)  
+- Pagination and per-page selector  
+- Navigate from User page to Post page  
+- Responsive grid layout  
+
+### Additional Features
+- Skeleton loading states for Users and Posts  
+- Error handling with toast notifications  
+- Dark mode toggle  
+- Undo delete feature for users  
+
+---
+
+## Technologies
+- Next.js 14 (App Router)  
+- TypeScript  
+- Tailwind CSS v4  
+- Zustand (state management)  
+- Axios (API requests)  
+- Yup (form validation)  
+- Shadcn UI components  
+- Sonner for toast notifications  
+
+---
+
+## Folder Structure
+
+```bash
+app/ # pages & layouts
+components/ # Reusable UI components (UserTable, PostCard, etc.)
+lib/ # API service functions
+store/ # Zustand state stores
+types/ # TypeScript type definitions
+schemas/ # Yup validation schemas
+public/ # Static assets
+
+```
 
 ## Getting Started
 
-First, run the development server:
-
+### Installation
 ```bash
-npm run dev
+git clone https://github.com/aqiel14/jobseeker-company-fe-test.git
+cd jobseeker-company-fe-test
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
