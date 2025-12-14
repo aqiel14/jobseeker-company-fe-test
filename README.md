@@ -6,6 +6,10 @@ It demonstrates a simple User and Post management app with CRUD operations, resp
 
 ---
 
+## Deployment
+
+https://jobseeker-company-fe-test.vercel.app/
+
 ## Features
 
 ### User Page
