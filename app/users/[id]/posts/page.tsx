@@ -64,10 +64,10 @@ export default function PostsPage() {
         value={String(perPage)}
         onValueChange={(value) => setPerPage(Number(value))}
       >
-        <SelectTrigger className="w-32">
-          <SelectValue placeholder="Per page" />
+        <SelectTrigger className="w-full max-w-60 md:w-16">
+          <SelectValue className="text-center" placeholder="Per page" />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="w-full md:min-w-4 md:w-16">
           <SelectItem value="6">6</SelectItem>
           <SelectItem value="12">12</SelectItem>
         </SelectContent>

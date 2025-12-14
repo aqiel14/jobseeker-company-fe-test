@@ -107,10 +107,10 @@ export default function UsersPage() {
           value={String(perPage)}
           onValueChange={(value) => setPerPage(Number(value))}
         >
-          <SelectTrigger className="w-32">
+          <SelectTrigger className="w-full max-w-60 md:w-16 my-2 md:my-0">
             <SelectValue placeholder="Per page" />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="w-full md:min-w-4 md:w-16">
             <SelectItem value="5">5</SelectItem>
             <SelectItem value="10">10</SelectItem>
             <SelectItem value="20">20</SelectItem>
